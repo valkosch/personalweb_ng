@@ -1,0 +1,29 @@
+name: Create Release tag
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.RELEASE_TRIGGER_PAT }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "lts/*"
+
+      - name: Install Dependencies
+        run: | 
+          npm install
+          npm audit fix || true
+
+      - name: Semantic Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TRIGGER_PAT }}
+        run: npx semantic-release
