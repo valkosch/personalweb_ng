@@ -32,15 +32,15 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.HARBOR_URL }}/${{ secrets.HARBOR_PROJECT }}/valko-webapp:latest
-            ${{ secrets.HARBOR_URL }}/${{ secrets.HARBOR_PROJECT }}/valko-webapp:${{ steps.get_version.outputs.VERSION }}
+            ${{ secrets.HARBOR_URL }}/${{ secrets.HARBOR_PROJECT }}/personal-ng-webapp:latest
+            ${{ secrets.HARBOR_URL }}/${{ secrets.HARBOR_PROJECT }}/personal-ng-webapp:${{ steps.get_version.outputs.VERSION }}
 
       - name: Update Helm Chart
         env:
           NEW_VERSION: ${{ steps.get_version.outputs.VERSION }}
           HELM_REPO_PAT: ${{ secrets.HELM_REPO_PAT }}
           HELM_REPO_URL: github.com/valkosch/helm-charts
-          VALUES_FILE_PATH: ./personal-helm/values.yaml
+          VALUES_FILE_PATH: ./personal_ng-helm/values.yaml
         run: |
           git clone https://x-access-token:${HELM_REPO_PAT}@${HELM_REPO_URL} helm-repo
           cd helm-repo

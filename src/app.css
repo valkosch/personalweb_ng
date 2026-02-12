@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Ubuntu Mono';
-    background-image: url('/src/lib/assets/images/backgrounds/background1.jpg');
+    background-image: url('/images/backgrounds/background1.jpg');
 }
 
 a:hover {

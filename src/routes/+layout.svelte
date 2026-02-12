@@ -20,15 +20,14 @@
 		{ href: "", src: "vim.vialle.love.anim.gif", alt: "Vim" },
 	];
 
-	import saddam from '$lib/assets/images/saddam.jpg'
 	let { children } = $props();
 </script>
 
 <svelte:head>
-	<link rel="apple-touch-icon" sizes="180x180" href="/src/lib/assets/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/src/lib/assets/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/src/lib/assets/favicon-16x16.png">
-	<link rel="manifest" href="/src/lib/assets/site.webmanifest">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
 	<title>Mi websitio</title>
 </svelte:head>
 <header class="w-full py-2 shadow-xl/50 bg-black text-white text-lg font-bold">
@@ -49,7 +48,7 @@
 		{#each buttons as { href, src, alt }}
 			<a href={href}>
 				<img
-					src='/src/lib/assets/images/88x31/{src}'
+					src='/images/88x31/{src}'
 					{alt}
 					width="88"
 					height="31"
@@ -58,7 +57,7 @@
 			</a>
 		{/each}
 		<img
-			src={saddam}
+			src="/images/saddam.jpg"
 			alt="Saddam"
 			width="88"
 			height="31"

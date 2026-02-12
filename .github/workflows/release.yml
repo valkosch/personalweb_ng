@@ -11,7 +11,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          token: ${{ secrets.RELEASE_TRIGGER_PAT }}
+          token: ${{ secrets.RELEASE_PERSONAL_PAT }}
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -25,5 +25,5 @@ jobs:
 
       - name: Semantic Release
         env:
-          GITHUB_TOKEN: ${{ secrets.RELEASE_TRIGGER_PAT }}
+          GITHUB_TOKEN: ${{ secrets.RELEASE_PERSONAL_PAT }}
         run: npx semantic-release

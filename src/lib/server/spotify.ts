@@ -1,4 +1,4 @@
-import {CLIENT_ID, CLIENT_SECRET, REFRESH_TOKEN} from '$env/static/private';
+import { env } from '$env/dynamic/private';
 import { json } from '@sveltejs/kit';
 
 let ACCESS_TOKEN: string | null = null;
@@ -18,9 +18,9 @@ async function refreshAccessToken() {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: new URLSearchParams({
             grant_type: 'refresh_token',
-            refresh_token: REFRESH_TOKEN,
-            client_id: CLIENT_ID,
-            client_secret: CLIENT_SECRET
+            refresh_token: env.REFRESH_TOKEN,
+            client_id: env.CLIENT_ID,
+            client_secret: env.CLIENT_SECRET
         })
     });
     const data = await res.json();
