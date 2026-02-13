@@ -6,6 +6,7 @@
     async function fetchCurrentlyPlaying() {
         const res = await fetch('/api/v1/music');
         const data = await res.json();
+        console.log(data);
         if (data.playing) {
             song = {
                 playing: data.playing,

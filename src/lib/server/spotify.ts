@@ -39,6 +39,7 @@ export async function GetCurrentPlaying() {
             return json({ playing: false });
         }
         const data = await playerRes.json();
+        console.log('Spotify API response:', data);
         if(!data?.item) {
             return json({ playing: false });
         }
