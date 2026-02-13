@@ -5,7 +5,7 @@
     import RecentPosts from '$lib/components/ui/RecentPosts.svelte';
     import Tree from '$lib/components/ui/Tree.svelte';
 </script>
-<div class="my-5 w-2/3 max-w-2xl min-h-screen flex flex-col items-center gap-4">
+<div class="my-5 w-4/5 max-w-2xl min-h-screen flex flex-col items-center gap-4 md:w-2/3">
     <Terminal class="overflow-y-auto rounded-lg shadow-lg/50 max-h-400 h-1/3 !w-full"/>
     <Container>
         <h2 class="text-white text-xl font-bold mb-4">Bienvenido a mi sitio web</h2>

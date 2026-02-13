@@ -36,6 +36,6 @@
 
 </script>
 
-<div class="w-2/3 bg-black m-2 p-2 rounded-lg" bind:this={element}>
+<div class="w-4/5 bg-black m-2 p-2 rounded-lg md:w-2/3" bind:this={element}>
   <ImageMasonry images={images} targetRowHeight={targetRowHeight} on:image-click={onClick} let:image={image}></ImageMasonry>
 </div>
