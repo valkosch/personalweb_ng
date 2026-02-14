@@ -38,8 +38,11 @@ export async function GetCurrentPlaying() {
         if (playerRes.status === 204 || playerRes.status === 400) {
             return json({ playing: false });
         }
+        if (playerRes.status === 401) {
+            await refreshAccessToken();
+            return await GetCurrentPlaying();
+        }
         const data = await playerRes.json();
-        console.log('Spotify API response:', data);
         if(!data?.item) {
             return json({ playing: false });
         }
@@ -58,15 +61,6 @@ export async function GetCurrentPlaying() {
         } else {
             console.error('Error fetching now playing:', err);
         }
-
-        const status = (err as any)?.response?.status;
-        if (status === 401) {
-            console.log('Access token expired, refreshing:', ACCESS_TOKEN);
-            await refreshAccessToken();
-            console.log('new access token:', ACCESS_TOKEN);
-            return await GetCurrentPlaying();
-        }
-
         return json({ error: 'Internal server error' }, { status: 500 });
     }
 }
