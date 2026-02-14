@@ -61,7 +61,9 @@ export async function GetCurrentPlaying() {
 
         const status = (err as any)?.response?.status;
         if (status === 401) {
+            console.log('Access token expired, refreshing:', ACCESS_TOKEN);
             await refreshAccessToken();
+            console.log('new access token:', ACCESS_TOKEN);
             return await GetCurrentPlaying();
         }
 
