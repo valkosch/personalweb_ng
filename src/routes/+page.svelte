@@ -16,6 +16,18 @@
         <MusicStatus />
     </Container>
     <Container>
+        <iframe
+            class="w-full"
+            src="https://luma.com/embed/event/evt-fBqF6mlnHRXt0M9/simple"
+            height="450"
+            frameborder="0"
+            style="border: 1px solid #bfcbda88; border-radius: 4px;"
+            allow="fullscreen; payment"
+            aria-hidden="false"
+            tabindex="0"
+        ></iframe>
+    </Container>
+    <Container>
         <h2 class="text-white text-xl font-bold mb-4">Mis publicaciones recientes</h2>
         <RecentPosts post_number={5} />
         <a href="https://blog.v41k0.xyz/blog/rss.xml" class="flex items-center gap-2 mt-4 text-sm text-lime-500 hover:bg-lime-500 hover:text-black p-1" target="_blank" rel="noopener noreferrer">
