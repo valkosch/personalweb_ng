@@ -1,5 +1,5 @@
 export function startTerminal(){
-    const fonts = ['Roman', 'S blood', 'ANSI Regular', 'Bloody', 'Delta Corps Priest 1', 'The Edge'];
+    const fonts = ['The Edge'];
     const font = ($(window).width() < 600)? 'The Edge' : fonts[Math.floor(Math.random() * 6)];
 
     figlet.defaults({ fontPath: 'https://unpkg.com/figlet/fonts' });
