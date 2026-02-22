@@ -1,6 +1,5 @@
 export function startTerminal(){
-    const fonts = ['The Edge'];
-    const font = ($(window).width() < 600)? 'The Edge' : fonts[Math.floor(Math.random() * 6)];
+    const font = 'The Edge';
 
     figlet.defaults({ fontPath: 'https://unpkg.com/figlet/fonts' });
     figlet.preloadFonts([font], ready);
