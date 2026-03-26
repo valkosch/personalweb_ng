@@ -27,4 +27,25 @@
               subscribe to my RSS feed
         </a>
     </Container>
+    <Container>
+        <h2 class="text-white text-xl font-bold mb-4">Charlemos!</h2>
+        <p class="text-gray-300">Si quieres contactarme, puedes enviarme un correo electrónico a valkosch [at] proton.me</p>
+        <p class="text-white">Mándame un mensaje y vamos a malgastar recursos del gobierno!</p>
+        <p class="text-lime-300 text-sm font-mono mt-4 whitespace-pre">
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+xjMEZwuDhxYJKwYBBAHaRw8BAQdAL6kdoTvrCOCgY3f9I/b2xVIdkMTdArLd
+9f+IS3ErEUvNJ3ZhbGtvc2NoQHByb3Rvbi5tZSA8dmFsa29zY2hAcHJvdG9u
+Lm1lPsKMBBAWCgA+BYJnC4OHBAsJBwgJkNFSnwZ9mXqYAxUICgQWAAIBAhkB
+ApsDAh4BFiEEkPUSIcJsYtRKBi800VKfBn2ZepgAAJzgAQDji2+VS8Icy8/X
+HEeR9q5xlY5mdus4L6IAOhlmo/x4cQEA0W3ngyXh44oLHYAn3xTKL71XHHBD
+j7U7O7DM7ga3WA3OOARnC4OHEgorBgEEAZdVAQUBAQdAlmqwPNGMVmL6iN+t
+w7WFaWhJ+lxOaePRkJG4OKC+MHEDAQgHwngEGBYKACoFgmcLg4cJkNFSnwZ9
+mXqYApsMFiEEkPUSIcJsYtRKBi800VKfBn2ZepgAAGimAP94eCxC1e+KjD6B
+0pyX+0em7F8icBpmXoeagcYZrHdiMAEAjCTPtyDy9j6t8gCcSYUvYncri6Np
+295YUlHH76+DVgg=
+=oqrr
+-----END PGP PUBLIC KEY BLOCK-----
+        </p>
+    </Container>
 </div>
