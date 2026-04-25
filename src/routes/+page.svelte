@@ -31,7 +31,7 @@
         <h2 class="text-white text-xl font-bold mb-4">Charlemos!</h2>
         <p class="text-gray-300">Si quieres contactarme, puedes enviarme un correo electrónico a valkosch [at] proton.me</p>
         <p class="text-white">Mándame un mensaje y vamos a malgastar recursos del gobierno!</p>
-        <p class="text-lime-300 text-sm font-mono mt-4 whitespace-pre overflow-x-scroll">
+        <p class="text-lime-300 text-sm font-mono mt-4 whitespace-pre overflow-x-scroll md:overflow-x-auto">
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 
 xjMEZwuDhxYJKwYBBAHaRw8BAQdAL6kdoTvrCOCgY3f9I/b2xVIdkMTdArLd
